@@ -1,0 +1,307 @@
+/*
+Theme Name: Moevy Co. Theme Starter
+Text Domain: moevyco
+Requires at least: 5.0
+Requires PHP: 7.1.0
+Description: Official Theme Starter for Moevy Co | Your On-Demand Creative Team
+Author: Moevy Co. - Creative Agency
+Author URI: https://www.moevyco.com
+Theme URI: https://www.moevyco.com
+Version: 0.0.1
+*/
+
+
+/* ========== TABLE OF CONTENTS ========== */
+
+  /*---- 0. External Typeface Calls
+  /*---- 1. Global Styles
+  /*---- 2. Text Styles
+  /*---- 3. Helper Styles
+  /*---- 4. Section Styles
+  /*---- 5. Element Styles
+  /*---- 6. Animation Styles
+  /*---- 7. Contact Form 7 Styles
+  /*---- 8. Media Queries
+
+/* ======================================= */
+
+/* ========== 0. External Typeface Calls ========== */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+/* ========== 1. Global Styles ========== */
+
+:root {
+	/* Color - Primary */
+        --color-primary: #472557;
+	/* Color - Secondary */
+		--color-secondary: #5a5a5a;
+    /* Font - Primary */
+        --font-primary: 'lato';
+    /* Font - Secondary */
+        --font-secondary: 'lato'; 
+}
+
+
+.bg-primary {
+	background-color: var(--color-primary);
+}
+
+.bg-secondary {
+	background-color: var(--color-secondary);
+}
+
+.btn {
+	border-radius: 0;
+}
+
+.btn-lg {
+	padding: 20px 35px;
+}
+
+.btn-primary {
+	color: var(--color-primary);
+}
+
+.btn-secondary {
+	color: var(--color-secondary);
+}
+
+/* ========== 2. Text Styles ========== */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-primary), sans-serif;
+}
+
+p, a, li { 
+    font-family: var(--font-secondary), sans-serif;
+}
+
+p {
+  font-size: 18px;
+}
+
+a, a:hover{
+  color: inherit;
+  opacity: 1;
+  transition: .3s;
+}
+
+a:hover {
+  text-decoration: none;
+  opacity: .8;
+  transition: .3s;
+}
+
+/* ========== 3. Helper Styles ========== */
+
+.pt-6, .py-6 {
+  padding-top: 5rem;
+}
+
+.pb-6, .py-6 {
+  padding-bottom: 5rem;
+}
+
+.no-pacity, .no-pacity:hover{
+  opacity: 1;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+/* ========== 4. Section Styles ========== */
+
+
+
+/* ========== 5. Element Styles ========== */
+
+  .btn-primary, .nav-button a {
+    background: var(--color-primary);
+    padding: 15px 30px !important;
+    color: white !important;
+  }
+
+  /* ===== Primary Menu ===== */
+
+      #menu-primary-menu .menu-item {
+        display: flex;
+        align-items: center;
+      }
+
+      #menu-primary-menu .nav-link {
+        color: white;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      .nav-button {
+        margin-left: 15px;
+      }
+
+      #nav-primary {
+        z-index: 10;
+      }
+
+      #nav-primary #menu-primary-menu a {
+        color: white;
+      }
+
+      #nav-primary #menu-primary-menu li.dropdown:hover ul.dropdown-menu, .dropdown-menu:hover  {
+        display: block; 
+        z-index: 10;   
+		transition: .3s;
+      }
+
+      #nav-primary #menu-primary-menu li.dropdown ul.dropdown-menu  {
+		transition: .3s;
+		margin-top:0;
+		border-radius: 0;
+      }
+
+      #nav-primary #menu-primary-menu li.dropdown ul.dropdown-menu li a  {
+		color: var(--color-primary);
+		text-align: right;
+      }
+
+  /* ===== Footer Navigation Menu ===== */
+
+      #menu-footer-navigation li a {
+        color: white;
+      }
+      #menu-footer-navigation li {
+        padding: 5px 0;
+      }
+      #menu-footer-navigation {
+        list-style: none;
+        padding-left: 0;
+      }
+
+  /* ===== Footer Social Menu ===== */
+
+      .footer-social a {
+        background: white;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color-primary);
+      }
+
+      #menu-social-menu {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 15px;
+      }
+
+      #menu-social-menu li {
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+  /* ===== Newsletter form ===== */
+
+      form input::placeholder {
+        color: white;
+      }
+
+      form input {
+          padding: 20px 15px;
+          background: none;
+          border: none;
+          border-bottom: 2px solid white;
+          color: white;
+          width: 100%;
+      }
+
+      .wpcf7-submit {
+        background: var(--primary-red);
+        border: 0;
+        padding: 15px 30px;
+        float: right;
+        margin: 0;
+        width: unset;
+    }
+
+/* ========== 6. Animation Styles ========== */
+
+
+/* ========== 7. Contact Form 7 Styles ========== */
+
+
+/* ========== 8. Media Queries ========== */
+
+
+/* Large devices (desktops, less than 1399px) */
+@media (max-width: 1399px) { 
+    
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199px) { 
+	
+	.display-2 {
+		font-size: 4rem;
+	}
+	
+	.display-4 {
+		font-size: 3rem;
+	}
+    
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991px) { 
+	
+	#nav-primary #navbarSupportedContent {
+		background: white;
+		padding: 40px;
+	}
+	
+	#menu-primary-menu {
+		color: var(--primary-blue);
+	}
+	
+	#nav-primary #menu-primary-menu a {
+		color: var(--primary-blue);
+	}
+	
+	#nav-primary #menu-primary-menu .dropdown-menu {
+		display: none !important;
+	}
+	
+	#menu-primary-menu .menu-item {
+		justify-content: center;
+		padding: 10px 20px;
+		font-size: 25px;
+	}
+	
+	.display-2 {
+		font-size: 3rem;
+	}
+	
+	.display-4 {
+		font-size: 2.2rem;
+	}
+    
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767px) { 
+	
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) { 
+    
+}
+
+/* Xl devices (desktops, greater than 1400px) */
+@media (min-width: 1400px) {
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1340px;
+}
+}
